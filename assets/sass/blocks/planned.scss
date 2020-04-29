@@ -1,0 +1,260 @@
+.planned {
+  margin-bottom: 221px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 100px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 80px;
+  }
+}
+
+.planned__header {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 51px 0;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 32px;
+  text-align: center;
+  color: #62709D;
+
+  @media (max-width: $mobile) {
+    margin: 0 0 25px 0;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.planned__header--span {
+  display: block;
+
+  @media (max-width: $tablet-min) {
+    display: none;
+  }
+}
+
+.planned__lists-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $tablet) {
+    flex-direction: column;
+  }
+
+  @media (max-width: $mobile) {
+    flex-direction: column;
+    width: 280px;
+  }
+}
+
+.planned__list-icons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $mobile) {
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+}
+
+.planned__list-buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (max-width: $mobile) {
+    flex-wrap: wrap;
+    justify-content: normal;
+  }
+}
+
+.planned__item {
+  opacity: 0.7;
+
+  @media (max-width: $mobile) {
+    width: 58px;
+    height: 60px;
+    margin-right: 53px;
+    margin-bottom: 40px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.planned__item-discord {
+  @media (max-width: $mobile) {
+    order: 1;
+  }
+}
+
+.planned__item-mic {
+  @media (max-width: $mobile) {
+    order: 2;
+  }
+}
+
+.planned__item-twitch {
+  @media (max-width: $mobile) {
+    order: 3;
+    margin-right: 0;
+  }
+}
+
+.planned__item-youtube {
+  @media (max-width: $mobile) {
+    order: 4;
+  }
+}
+
+.planned__item-twitter:nth-child(1n) {
+  @media (max-width: $mobile) {
+    order: 5;
+    margin-right: 53px;
+  }
+}
+
+.planned__item-viber {
+  @media (max-width: $mobile) {
+    order: 6;
+  }
+}
+
+.planned__item-smi {
+  @media (max-width: $mobile) {
+    margin-right: 0;
+  }
+}
+
+.planned__item-rss {
+  @media (max-width: $mobile) {
+    order: -2;
+  }
+}
+
+.planned__item-blog:nth-child(1n) {
+  @media (max-width: $mobile) {
+    position: relative;
+    left: -8px;
+    order: -1;
+    margin-right: 53px;
+  }
+}
+
+.planned__btn {
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.planned__btn-youtube {
+  width: 89px;
+  height: 66px;
+  background-image: url(../img/icons/planned-youtube.svg);
+
+  @media (max-width: $mobile) {
+    width: 69px;
+    height: 52px;
+    background-image: url(../img/icons/planned-youtube-mob.svg);
+  }
+}
+
+.planned__btn-mic {
+  width: 67px;
+  height: 66px;
+  background-image: url(../img/icons/planned-mic.svg);
+
+  @media (max-width: $mobile) {
+    width: 63px;
+    height: 64px;
+    background-image: url(../img/icons/planned-mic-mob.svg);
+  }
+}
+
+.planned__btn-viber {
+  width: 67px;
+  height: 67px;
+  background-image: url(../img/icons/planned-viber.svg);
+
+  @media (max-width: $mobile) {
+    width: 52px;
+    height: 52px;
+    background-image: url(../img/icons/planned-viber-mob.svg);
+  }
+}
+
+.planned__btn-twitch {
+  width: 66px;
+  height: 68px;
+  background-image: url(../img/icons/planned-twitch.svg);
+
+  @media (max-width: $mobile) {
+    width: 66px;
+    height: 68px;
+    background-image: url(../img/icons/planned-twitch-mob.svg);
+  }
+}
+
+.planned__btn-discord {
+  width: 62px;
+  height: 68px;
+  background-image: url(../img/icons/planned-discord.svg);
+
+  @media (max-width: $mobile) {
+    width: 62px;
+    height: 69px;
+    background-image: url(../img/icons/planned-discord-mob.svg);
+  }
+}
+
+.planned__btn-twitter {
+  width: 79px;
+  height: 66px;
+  background-image: url(../img/icons/planned-twitter.svg);
+
+  @media (max-width: $mobile) {
+    width: 61px;
+    height: 52px;
+    background-image: url(../img/icons/planned-twitter-mob.svg);
+  }
+}
+
+.planned__btn-text {
+  padding: 19px 13px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #ABB4CD;
+  background: #F4F8FC;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px rgba(217, 227, 239, 0.5), inset 3px 3px 10px rgba(174, 193, 212, 0.7), inset -6px -6px 5px #FFFFFF;
+  cursor: pointer;
+  transition: .3s;
+
+  @media (max-width: $mobile) {
+    padding: 13px 9px;
+    font-size: 16px;
+  }
+}

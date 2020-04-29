@@ -1,0 +1,245 @@
+@@include('template/head.html', {
+	"pagetitle": "Главная",
+	"bodyclass": ""
+})
+
+@@include('template/header.html', {
+  "header-logo-link": "false"
+})
+
+<main class="main">
+  <section class="about">
+    <div class="about-container container">
+      <div class="about__left-wrapper">
+        <h1 class="about__header"><span class="about__header--color">Vision</span> — система сбора, обработки и анализа активности в менеджерах и социальных сетях</h1>
+        <p class="about__text">Отслеживайте и анализируйте любые активности пользователей для принятия своевременных управленческих решений</p>
+        <button class="about__btn-sign-in"><i class="icon-lock"></i>Войти в систему</button>
+      </div>
+      <div class="about__right-wrapper">
+        <div class="about__graph">
+<!--          <img src="./img/graph.png" alt="graph">-->
+          <div class="ct-chart ct-perfect-fourth"></div>
+        </div>
+        <div class="about__graph-btn-wrapper">
+          <button class="about__graph-btn-graph about__graph-btn-graph--active">Кейворд <span class="about__graph-btn-graph-number">5</span></button>
+          <button class="about__graph-btn-graph">Длинный кейворд <span class="about__graph-btn-graph-number">8</span></button>
+          <button class="about__graph-btn-graph">Кейворд <span class="about__graph-btn-graph-number">11</span></button>
+          <button class="about__graph-btn-graph">Длинный кейворд <span class="about__graph-btn-graph-number">2</span></button>
+          <button class="about__graph-btn-graph">Самый наидлиннейший кейворд <span class="about__graph-btn-graph-number">33</span></button>
+          <button class="about__graph-btn-graph-plus"><i class="icon-plus"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="connected">
+    <div class="connected-wrapper">
+      <h2 class="connected__header">Подключенные каналы:</h2>
+      <ul class="connected__social">
+        <li class="connected__item">
+          <button class="connected__btn-social connected__btn-social-vk" href="#"></button>
+        </li>
+        <li class="connected__item">
+          <button class="connected__btn-social connected__btn-social-odnk" href="#"></button>
+        </li>
+        <li class="connected__item">
+          <button class="connected__btn-social connected__btn-social-fb" href="#"></button>
+        </li>
+        <li class="connected__item">
+          <button class="connected__btn-social connected__btn-social-wtsp" href="#"></button>
+        </li>
+        <li class="connected__item">
+          <button class="connected__btn-social connected__btn-social-telegram" href="#"></button>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="planned">
+    <div class="container">
+      <h2 class="planned__header">Планируются к подключению<span class="planned__header--span">:</span></h2>
+      <div class="planned__lists-wrapper">
+        <ul class="planned__list-icons">
+          <li class="planned__item planned__item-youtube">
+            <button class="planned__btn planned__btn-youtube"></button>
+          </li>
+          <li class="planned__item planned__item-mic">
+            <button class="planned__btn planned__btn-mic"></button>
+          </li>
+          <li class="planned__item planned__item-viber">
+            <button class="planned__btn planned__btn-viber"></button>
+          </li>
+          <li class="planned__item planned__item-twitch">
+            <button class="planned__btn planned__btn-twitch"></button>
+          </li>
+          <li class="planned__item planned__item-discord">
+            <button class="planned__btn planned__btn-discord"></button>
+          </li>
+          <li class="planned__item planned__item-twitter">
+            <button class="planned__btn planned__btn-twitter"></button>
+          </li>
+        </ul>
+        <ul class="planned__list-buttons">
+          <li class="planned__item planned__item-smi">
+            <button class="planned__btn-text">СМИ</button>
+          </li>
+          <li class="planned__item planned__item-rss">
+            <button class="planned__btn-text">RSS</button>
+          </li>
+          <li class="planned__item planned__item-blog">
+            <button class="planned__btn-text">Блоги</button>
+          </li>
+          <li class="planned__item">
+            <button class="planned__btn-text">Сайты&nbsp;отзывов</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="interfaces">
+    <div class="container">
+      <div class="interfaces-wrapper">
+        <div class="interfaces__left-wrapper">
+          <h2 class="interfaces__header">Интерфейсы системы</h2>
+          <p class="interfaces__text">Доступ к личному кабинету возможен с любого устройста. Интерфейсы системы полностью адаптированы и интуитивно понятны любому пользователю.</p>
+          <div class="interfaces__img-mobile-container">
+            <div class="interfaces__img-mobile interfaces__img-mobile--desktop"></div>
+          </div>
+          <div class="interfaces__btns-container">
+            <button class="interfaces__btn interfaces__btn-desktop interfaces__btn--active">Десктоп</button>
+            <button class="interfaces__btn interfaces__btn-tablet">Планшет</button>
+            <button class="interfaces__btn interfaces__btn-mobile">Телефон</button>
+          </div>
+        </div>
+        <div class="interfaces__right-img interfaces__right-img--desktop"></div>
+      </div>
+    </div>
+  </section>
+  <section class="features">
+    <div class="container">
+      <h2 class="features__header">Возможности системы</h2>
+      <p class="features__text">Богатый инструментарий, позволяющий решать любые задачи</p>
+      <div class="features__container">
+        <div class="features__wrapper">
+          <ul class="features__items-list">
+            <li class="features__item">
+              <img src="./img/icons/features-analytic.svg" alt="features-icon" class="features__icon">
+              <p class="features__item-text">Аналитика по кейвордам + окружение</p>
+            </li>
+            <li class="features__item">
+              <img src="./img/icons/features-monitor.svg" alt="features-icon" class="features__icon">
+              <p class="features__item-text">Мониторинг вбросов информации</p>
+            </li>
+            <li class="features__item">
+              <img src="./img/icons/features-music-control.svg" alt="features-icon" class="features__icon">
+              <p class="features__item-text">Контроль динамики по каналам</p>
+            </li>
+            <li class="features__item">
+              <img src="./img/icons/features-graphs.svg" alt="features-icon" class="features__icon">
+              <p class="features__item-text">Графики, отчеты и статистика</p>
+            </li>
+            <li class="features__item">
+              <img src="./img/icons/features-avatar.svg" alt="features-icon" class="features__icon">
+              <p class="features__item-text">Личные кабинеты</p>
+            </li>
+            <li class="features__item">
+              <img src="./img/icons/features-focus.svg" alt="features-icon" class="features__icon">
+              <p class="features__item-text">Слежение за токсичными каналами и пользователями</p>
+            </li>
+          </ul>
+        </div>
+        <div class="features__eye"></div>
+      </div>
+    </div>
+  </section>
+  <section class="rates">
+    <div class="container">
+      <h2 class="rates__header">Универсальные тарифы</h2>
+      <div class="rates__container">
+        <div class="rates__item">
+          <div class="rates__price-container">
+            <i class="rates__icon rates__icon--base"></i>
+            <div class="rates__price-wrapper">
+              <span class="rates__price">ХХХ</span>
+              <span class="rates__term">₽/мес</span>
+            </div>
+          </div>
+          <h3 class="rates__item-header">Базовый</h3>
+          <ul class="rates__item-list">
+            <li class="rates__list-item">Х тем и кейвордов</li>
+            <li class="rates__list-item">Х сотрудников в личном кабинете</li>
+            <li class="rates__list-item">Х отслеживаемых каналов</li>
+            <li class="rates__list-item rates__list-item--gray">Обучение по работе с системой</li>
+            <li class="rates__list-item rates__list-item--gray">Поддержка 24/7</li>
+            <li class="rates__list-item rates__list-item--gray">Полный доступ ко всей функциональности</li>
+          </ul>
+        </div>
+        <div class="rates__item">
+          <div class="rates__price-container">
+            <i class="rates__icon rates__icon--pro"></i>
+            <div class="rates__price-wrapper">
+              <span class="rates__price">ХХХ</span>
+              <span class="rates__term">₽/мес</span>
+            </div>
+          </div>
+          <h3 class="rates__item-header">Продвинутый</h3>
+          <ul class="rates__item-list">
+            <li class="rates__list-item">Х тем и кейвордов</li>
+            <li class="rates__list-item">Х сотрудников в личном кабинете</li>
+            <li class="rates__list-item">Х отслеживаемых каналов</li>
+            <li class="rates__list-item">Обучение по работе с системой</li>
+            <li class="rates__list-item">Поддержка по E-mail</li>
+            <li class="rates__list-item rates__list-item--gray">Полный доступ ко всей функциональности</li>
+          </ul>
+        </div>
+        <div class="rates__item">
+          <div class="rates__price-container">
+            <i class="rates__icon rates__icon--unlim"></i>
+            <div class="rates__price-wrapper">
+              <span class="rates__price">ХХХ</span>
+              <span class="rates__term">₽/мес</span>
+            </div>
+          </div>
+          <h3 class="rates__item-header">Безлимитный</h3>
+          <ul class="rates__item-list">
+            <li class="rates__list-item">Х тем и кейвордов</li>
+            <li class="rates__list-item">Х сотрудников в личном кабинете</li>
+            <li class="rates__list-item">Х отслеживаемых каналов</li>
+            <li class="rates__list-item">Обучение по работе с системой</li>
+            <li class="rates__list-item">Поддержка 24/7</li>
+            <li class="rates__list-item">Полный доступ ко всей функциональности</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="request">
+    <div class="container request-wrapper">
+      <div class="request__left-wrapper">
+        <h2 class="request__header">Отправить заявку на подключение</h2>
+        <p class="request__text">Менеджер свяжется с Вами, подробно расскажет о возможностях системы и подберет оптимальное решение вашей задачи.</p>
+      </div>
+      <div class="request__right-wrapper">
+        <form action="" class="request__form">
+          <input type="text" class="request__input request__input-name" placeholder="Имя" required>
+          <div class="request__inputs-wrapper">
+            <input type="email" class="request__input request__input--small request__input-email" placeholder="E-mail" required>
+            <input type="text" class="request__input request__input--small request__input-position" placeholder="Должность" required>
+            <input type="text" class="request__input request__input--small request__input-inn" placeholder="ИНН компании" pattern="[0-9]+$" required>
+            <input type="tel" class="request__input request__input--small request__input-tel" placeholder="Телефон" pattern="[0-9]+$" required>
+          </div>
+          <div class="request__submit-wrapper">
+            <span class="request__required">Все поля обязательны для заполнения</span>
+            <button class="request__btn-submit" type="submit">Отправить заявку</button>
+          </div>
+        </form>
+        <p class="request__agree">Нажимая на кнопку “Отправить заявку” вы соглашаетесь с условиями <a href="agreement.html"> Пользовательского соглашения</a> и <a href="politic.html">Политикой конфиденциальности</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+@@include('template/footer.html')
+
+@@include('template/scripts.html')
+
+</body>
+</html>

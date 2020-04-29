@@ -1,0 +1,29 @@
+@@include('template/head.html', {
+  "pagetitle": "Ошибка 404",
+  "bodyclass": ""
+})
+
+@@include('template/header.html', {
+  "header_logo_link": "true"
+})
+
+<main>
+  <div class="container">
+    <section class="block-404">
+      <div class="block-404__img">
+        <img src="./img/404.svg" alt="404-img">
+      </div>
+      <h1 class="block-404__header">Страница не найдена</h1>
+      <p class="block-404__text">Запрошенная страница недоступна.</p>
+      <p class="block-404__text">Возможно, она была удалена или её адрес был указан неверно.</p>
+      <a class="block-404__btn-index" href="index.html">На главную</a>
+    </section>
+  </div>
+</main>
+
+@@include('template/footer.html')
+
+@@include('template/scripts.html')
+
+</body>
+</html>

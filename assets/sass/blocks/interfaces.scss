@@ -1,0 +1,318 @@
+.interfaces {
+  margin-bottom: 230px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 100px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 90px;
+  }
+}
+
+.interfaces-wrapper {
+  position: relative;
+  display: flex;
+}
+
+.interfaces__left-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 523px;
+
+  @media (max-width: $tablet) {
+    width: 390px;
+  }
+
+  @media (max-width: $tablet-min) {
+    width: 100%;
+  }
+
+  @media (max-width: $mobile) {
+    position: relative;
+    width: 100%;
+  }
+}
+
+.interfaces__header {
+  margin: 42px 0 40px 0;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 55px;
+  color: #62709D;
+
+  @media (max-width: $tablet) {
+    font-size: 33px;
+    line-height: 40px;
+  }
+
+  @media (max-width: $tablet-min) {
+    text-align: center;
+  }
+
+  @media (max-width: $mobile) {
+    margin: 0 0 29px 0;
+    font-size: 22px;
+    line-height: 29px;
+  }
+}
+
+.interfaces__text {
+  margin: 0 0 45px 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  color: #C1C7CE;
+
+  @media (max-width: $tablet) {
+    font-size: 17px;
+    line-height: 25px;
+  }
+
+  @media (max-width: $tablet-min) {
+    text-align: center;
+  }
+
+  @media (max-width: $mobile) {
+    margin: 0 0 20px 0;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.interfaces__btns-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 420px;
+  height: 50px;
+  background: #F4F8FC;
+  box-shadow: 1px 1px 4px rgba(217, 227, 239, 0.5), inset 5px 3px 10px rgba(174, 193, 212, 0.6), inset -6px -6px 5px #FFFFFF;
+  border-radius: 23px;
+
+  &:after {
+    content: 'Десктоп';
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    width: 132px;
+    height: 42px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 43px;
+    color: #148AFF;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #F4F8FC;
+    box-shadow: 1px 1px 4px #CEDBE9;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+
+    @media (max-width: $tablet) {
+      top: 2px;
+      width: 100px;
+      height: 41px;
+      font-size: 13px;
+    }
+
+    @media (max-width: $mobile) {
+      width: 90px;
+      font-size: 10px;
+      line-height: 42px;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    width: 320px;
+    height: 45px;
+  }
+
+  @media (max-width: $tablet-min) {
+    margin: 0 auto;
+  }
+
+  @media (max-width: $mobile) {
+    width: 100%;
+  }
+}
+
+.interfaces__btn-desktop-active {
+  &:after {
+    content: 'Десктоп';
+    left: 4px;
+
+    @media (max-width: $mobile) {
+      left: 2px;
+    }
+  }
+}
+
+.interfaces__btn-tablet-active {
+  &:after {
+    content: 'Планшет';
+    left: 143px;
+
+    @media (max-width: $tablet) {
+      left: 108px;
+    }
+
+    @media (max-width: $mobile) {
+      left: 94px;
+    }
+  }
+}
+
+.interfaces__btn-mobile-active {
+  &:after {
+    content: 'Телефон';
+    left: 285px;
+
+    @media (max-width: $tablet) {
+      left: 217px;
+    }
+
+    @media (max-width: $mobile) {
+      left: 188px;
+    }
+  }
+}
+
+.interfaces__btn {
+  padding: 0 35px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #C1C7CE;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: .3s;
+  outline: none;
+
+  @media (max-width: $tablet) {
+    padding: 0 22px;
+    font-size: 13px;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 0 20px;
+    font-size: 10px;
+    line-height: 15px;
+  }
+}
+
+.interfaces__btn--active {
+  color: #148AFF;
+}
+
+.interfaces__right-img {
+  position: absolute;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: .3s;
+
+  @media (max-width: $tablet-min) {
+    display: none;
+  }
+}
+
+.interfaces__right-img--desktop {
+  top: 0;
+  right: -125px;
+  width: 854px;
+  height: 485px;
+  background-image: url(../img/interfaces-desktop.png);
+
+  @media (max-width: $tablet) {
+    top: 60px;
+    right: 0;
+    width: 500px;
+    height: 400px;
+  }
+}
+
+.interfaces__right-img--tablet {
+  top: -25px;
+  right: 0;
+  width: 591px;
+  height: 435px;
+  background-image: url(../img/interfaces-tablet.png);
+
+  @media (max-width: $tablet) {
+    top: 40px;
+    right: 60px;
+    width: 401px;
+    height: 300px;
+  }
+}
+
+.interfaces__right-img--mobile {
+  top: -73px;
+  right: 130px;
+  width: 319px;
+  height: 490px;
+  background-image: url(../img/interfaces-mobile.png);
+
+  @media (max-width: $tablet) {
+    top: 40px;
+    right: 157px;
+    width: 200px;
+    height: 300px;
+  }
+}
+
+// --- mobile img
+
+.interfaces__img-mobile-container {
+  position: relative;
+  display: none;
+
+  @media (max-width: $tablet-min) {
+    display: block;
+    height: 200px;
+    margin-bottom: 38px;
+  }
+}
+
+.interfaces__img-mobile {
+  position: absolute;
+}
+
+.interfaces__img-mobile--desktop {
+  top: 23px;
+  width: 320px;
+  height: 189px;
+  background-image: url(../img/interfaces-desktop-mob.png);
+
+  @media (max-width: $tablet-min) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.interfaces__img-mobile--tablet {
+  top: 17px;
+  width: 245px;
+  height: 181px;
+  background-image: url(../img/interfaces-tablet-mob.png);
+
+  @media (max-width: $tablet-min) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.interfaces__img-mobile--mobile {
+  top: -10px;
+  width: 142px;
+  height: 232px;
+  background-repeat: no-repeat;
+  background-image: url(../img/interfaces-mobile-mob.png);
+
+  @media (max-width: $tablet-min) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
